@@ -1,6 +1,7 @@
 # Mb-drf-article
 
-Mb-drf-article is a simple Django Rest Framework app to add some articles.
+Mb-drf-article is a simple Django Rest Framework app to add some articles.  
+install the package with `pip install mb-drf-article`.
 
 ## Quick start
 
@@ -11,7 +12,7 @@ Mb-drf-article is a simple Django Rest Framework app to add some articles.
 
 INSTALLED_APPS = [
 ...
-'mb-drf-article',
+'mb_drf_article',
 ]
 ```
 
@@ -22,7 +23,7 @@ INSTALLED_APPS = [
 
 urlpatterns = [
     # ...
-    path('articles/', include('mb-drf-article.urls')),
+    path('articles/', include('mb_drf_article.urls')),
 ]
 ```
 
