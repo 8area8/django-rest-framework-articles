@@ -46,3 +46,41 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 5
 }
 ```
+
+## Try it
+
+try the application with httpie :
+
+```bash
+http http://127.0.0.1:8000/articles/
+
+# OUTPUT :
+
+HTTP/1.1 200 OK
+Allow: GET, POST, HEAD, OPTIONS
+Content-Length: 341
+Content-Type: application/json
+Date: Tue, 18 Jun 2019 12:34:41 GMT
+Server: WSGIServer/0.2 CPython/3.6.5rc1
+Vary: Accept
+X-Frame-Options: SAMEORIGIN
+
+{
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": []
+}
+```
+
+## Methods
+
+- **GET** `http://127.0.0.1:8000/articles/`: get the articles
+- **POST** `http://127.0.0.1:8000/articles/`: post a new article
+  <br>
+- **GET** `http://127.0.0.1:8000/articles/<slug_title>`: get a specific article
+- **PUT** `http://127.0.0.1:8000/articles/<slug_title>`: update or create (all fields required)
+- **PATCH** `http://127.0.0.1:8000/articles/<slug_title>`: update an article
+- **DELETE** `http://127.0.0.1:8000/articles/<slug_title>`: delete an article
+
+> Note: Get methods doesn't require the admin permission. Others methods requires the admin permission.
