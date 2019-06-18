@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "article"
+name = "mb-drf-article"
 version = "0.1.0"
 description = "An article model for Django-Rest-Framework."
 authors = ["mikael briolet <mikaelbriolet.services@gmail.com>"]
