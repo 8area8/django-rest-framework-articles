@@ -2,11 +2,11 @@
 name = "article"
 version = "0.1.0"
 description = "An article model for Django-Rest-Framework."
-authors = ["mikael briolet <mbriolet.ma@gmail.com>"]
+authors = ["mikael briolet <mikaelbriolet.services@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-# homepage = "https://github.com/johnfraney/flake8-markdown"
-# repository = "https://github.com/johnfraney/flake8-markdown"
+homepage = "https://github.com/8area8/drf-articles"
+repository = "https://github.com/8area8/drf-articles"
 keywords = ["django", "django rest framework", "article"]
 classifiers = [
     'Environment :: Web Environment',
